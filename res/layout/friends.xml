@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/beijing"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="50dp"
+        android:orientation="horizontal"
+        android:background="@drawable/activities_button" >
+
+        <RelativeLayout
+            android:layout_width="50dp"
+            android:layout_height="50dp" >
+
+            <ImageView
+                android:id="@+id/my_portrait"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:src="@drawable/portrait" />
+
+            <TextView
+                android:id="@+id/message_count"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/notification"
+                android:gravity="center"
+                android:text="7"
+                android:visibility="invisible"
+                android:textColor="@android:color/white"
+                android:textSize="18sp" />
+
+        </RelativeLayout>
+
+        <TextView
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center_horizontal"
+            android:text="我的好友"
+            android:textSize="24sp" >
+        </TextView>
+
+        <Button
+            android:id="@+id/add_freinds"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@android:color/transparent"
+            android:text="添加"
+            android:textSize="18sp" >
+        </Button>
+    </LinearLayout>
+
+    <ListView
+        android:id="@+id/my_friends"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:divider="#868686"
+        android:dividerHeight="1dp"
+        android:layout_weight="1" >
+    </ListView>
+
+</LinearLayout>

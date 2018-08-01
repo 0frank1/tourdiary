@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+	android:background="@drawable/timg"
+    android:orientation="vertical" >
+    <LinearLayout 
+        android:layout_height="match_parent"
+        android:layout_width="match_parent"
+	    android:layout_marginLeft="20dp"
+	    android:layout_marginRight="20dp"
+	    android:orientation="vertical" >
+        <TextView
+	        android:id="@+id/tv_number"
+	        android:layout_width="fill_parent"
+	        android:layout_height="25dp"
+	        android:layout_marginTop="50dp"
+	        android:background="@null"
+	        android:text="昵称："
+	        android:textSize="18sp" />
+	    <EditText 
+	        android:id="@+id/et_phonenumber"
+	        android:layout_width="match_parent"
+	        android:layout_height="30dp"
+	        android:background="@null"
+	        />
+	    <View style="@style/PersonalLine" />
+	    
+	    <TextView
+	        android:id="@+id/tv_password"
+	        android:layout_width="fill_parent"
+	        android:layout_height="25dp"
+	        android:background="@null"
+	        android:text="密码："
+	        android:textSize="18sp" />
+	    <EditText 
+	        android:id="@+id/et_password"
+	        android:layout_width="match_parent"
+	        android:layout_marginTop="10dp"
+	        android:layout_height="30dp"
+	        android:hint="不少于6位字"
+	        android:background="@null"
+	        android:inputType="textPassword"
+	        />
+	    <View style="@style/PersonalLine" />
+	    <EditText 
+	        android:id="@+id/et_repassword"
+	        android:layout_width="match_parent"
+	        android:layout_height="35dp"
+	        android:hint="确认密码"
+	        android:background="@null"
+	        android:inputType="textPassword"
+	        />
+	    <View style="@style/PersonalLine" />
+
+	    <Button
+	        android:id="@+id/bt_register"
+	        android:layout_width="match_parent"
+	        android:layout_height="40dp"
+	        android:layout_marginTop="15dp"
+	        android:background="@drawable/activities_button"
+	        android:textColor="@color/white"
+	        android:text="立即注册"/>
+	        
+    </LinearLayout>
+
+</LinearLayout>
